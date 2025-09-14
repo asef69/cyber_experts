@@ -1,0 +1,187 @@
+/* src/App.css */
+
+/* Overall layout */
+.App {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Cart Information */
+.cart-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cart-info span {
+  font-size: 16px;
+}
+
+/* Expert Cards Container (Grid Layout) */
+.experts-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically adjust the grid */
+  gap: 20px;
+  justify-items: center;
+  padding: 10px;
+}
+
+/* Expert Card Styling */
+.expert-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;  /* Rounded corners */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.expert-card:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+}
+
+.expert-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.expert-card h3 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.expert-card p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.add-btn {
+  background-color: #3498db; /* Light blue */
+}
+
+.remove-btn {
+  background-color: #ff4b5c; /* Red */
+}
+
+button.remove-btn:hover {
+  background-color: #d93c43;
+}
+
+/* Cart Styling */
+.cart {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.cart h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cart img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.cart button {
+  background-color: #ff4b5c;
+}
+
+.cart button:hover {
+  background-color: #d93c43;
+}
+
+.cart-info span {
+  font-weight: bold;
+}
+
+/* Clear Cart Button */
+.clear-btn {
+  background-color: #ff6f61;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-btn:hover {
+  background-color: #e04a39;
+}
