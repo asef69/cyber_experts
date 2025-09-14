@@ -11,7 +11,7 @@ function App() {
 
   useEffect(()=>{
     axios
-    .get('public/Expert.json')
+    .get('/Expert.json')
     .then((response) => {
       setExperts(response.data);
     })
